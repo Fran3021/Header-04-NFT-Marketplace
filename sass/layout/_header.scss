@@ -1,0 +1,126 @@
+.header-principal{
+    position: relative;
+    padding-top: 25px;
+    margin-bottom: 80px;
+    .background-hero{
+        width: 45%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .image-hero{
+        width: 33%;
+        position: absolute;
+        z-index: -1;
+        right: 5%;
+        top:130px;
+        @include breakpoint(desktopxl){
+            right: 6%;
+        }
+    }
+    .border-image-hero{
+        position: absolute;
+        z-index: -1;
+        width: 41%;
+        right: 1%;
+        top: 90px;
+        @include breakpoint(desktopxl){
+            right: 2%;
+        }
+    }
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title-menu{
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            @include breakpoint(desktopxxl){
+                gap: 153px;
+            }
+            h1{
+                font-size: 30px;
+                font-family: $belgrano;
+                color: $black;
+                @include breakpoint(desktopxl){
+                    font-size: 33px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 36px;
+                }
+                span{
+                    font-size: 30px;
+                    font-family: $belgrano;
+                    color: $red;
+                    @include breakpoint(desktopxl){
+                        font-size: 33px;
+                    }
+                    @include breakpoint(desktopxxl){
+                        font-size: 36px;
+                    }
+                }
+            }
+            .menu{
+                ul{
+                    display: flex;
+                    gap: 30px;
+                    @include breakpoint(desktopxxl){
+                        gap: 56px;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: $black;
+                        @include breakpoint(desktopxl){
+                            font-size: 16px;
+                        }
+                        @include breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .register-login{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            @include breakpoint(desktopxxl){
+                gap: 30px;
+            }
+            .sign-up{
+                text-decoration: none;
+                color: $white;
+                font-weight: 600;
+                font-size: 14px;
+                @include breakpoint(desktopxl){
+                    font-size: 16px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 18px;
+                }
+            }
+            .sign-in{
+                text-decoration: none;
+                color: $white;
+                font-weight: 600;
+                font-size: 14px;
+                display: inline-block;
+                width: max-content;
+                background-color: $red;
+                padding: 8px 23px;
+                @include breakpoint(desktopxl){
+                    font-size: 16px;
+                    padding: 12px 27px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 18px;
+                    padding: 11px 40px;
+                }
+            }
+        }
+    }
+}
+
